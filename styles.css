@@ -1,1 +1,42 @@
 /*  your css code here. If applicable */
+:root{
+	--bg-color:rgb(135,206,235);
+}
+body{
+	background-color:var(--bg-color);
+}
+p:first-child{
+	background-color:black;
+	color:white;
+}
+p:nth-child(2){
+	color:black;
+}
+p:last-child{
+	color:red;
+}
+li {
+  background-color: gray;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box; /* to include padding in width */
+}
+
+/* Odd items have white background */
+li:nth-child(odd) {
+  background-color: white;
+}
+
+/* First and last items: font size 22px */
+li:first-child,
+li:last-child {
+  font-size: 22px;
+}
+
+/* Third-to-last item: pink background */
+li:nth-last-child(3) {
+  background-color: pink ; 
+}
+
+
+
